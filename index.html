@@ -14,12 +14,30 @@
                 <div class="logo">ZHIMPA <span>ZHIMPA</span></div>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="recipes.html">Recipes</a></li>
                         <li><a href="community.html">Community</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="share.html" class="btn share-btn">Share a recipe</a></li>
+                        <!-- User Menu (shown when logged in) -->
+                        <li class="user-menu" id="user-menu">
+                            <div class="user-dropdown">
+                                <button class="user-dropdown-btn">
+                                    <span id="user-name">User</span> ▼
+                                </button>
+                                <div class="user-dropdown-content">
+                                    <a href="profile.html">My Profile</a>
+                                    <a href="my-recipes.html">My Recipes</a>
+                                    <a href="#" onclick="logout()">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Auth Buttons (shown when not logged in) -->
+                        <li class="auth-buttons" id="auth-buttons">
+                            <a href="login.html" class="btn">Log in</a>
+                            <a href="signup.html" class="btn btn-secondary">Sign up</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -55,7 +73,7 @@
                         <h3 class="recipe-title">Ema Datshi with Red Rice</h3>
                         <p>Bhutanese iconic chili & cheese stew, served with nutty Bhutanese red rice.</p>
                         <div class="recipe-actions">
-                            <a href="recipe-detail.html" class="btn">View recipe</a>
+                            <a href="ema-datshi.html" class="btn">View recipe</a>
                             <button class="btn">Save</button>
                         </div>
                     </div>
@@ -73,7 +91,7 @@
                         <h3 class="recipe-title">Jasha Maroo</h3>
                         <p>Spicy diced chicken stew with tomatoes, garlic, ginger, and chiles.</p>
                         <div class="recipe-actions">
-                            <a href="recipe-detail.html" class="btn">View recipe</a>
+                            <a href="jasha-maroo.html" class="btn">View recipe</a>
                             <button class="btn">Save</button>
                         </div>
                     </div>
@@ -91,7 +109,7 @@
                         <h3 class="recipe-title">Momos (Steamed Dumplings)</h3>
                         <p>Nourishing dumplings filled with cheese or minced meat, served with ezay.</p>
                         <div class="recipe-actions">
-                            <a href="recipe-detail.html" class="btn">View recipe</a>
+                            <a href="hoentay.html" class="btn">View recipe</a>
                             <button class="btn">Save</button>
                         </div>
                     </div>
@@ -128,7 +146,7 @@
             <h2 class="section-title">Join ZHIMPA ZHIMPA</h2>
             <p class="mb-30">Keep Bhutanese recipes alive — share your family dishes, find trusted guidance, and connect with cooks across Bhutan and beyond.</p>
             <div class="hero-btns">
-                <a href="signup.html" class="btn">Start sharing</a>
+                <a href="share.html" class="btn">Start sharing</a>
                 <a href="recipes.html" class="btn btn-secondary">Browse recipes</a>
             </div>
         </div>

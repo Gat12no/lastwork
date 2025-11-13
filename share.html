@@ -20,6 +20,24 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="share.html" class="btn share-btn active">Share a recipe</a></li>
+                        <!-- User Menu (shown when logged in) -->
+                        <li class="user-menu" id="user-menu">
+                            <div class="user-dropdown">
+                                <button class="user-dropdown-btn">
+                                    <span id="user-name">User</span> ▼
+                                </button>
+                                <div class="user-dropdown-content">
+                                    <a href="profile.html">My Profile</a>
+                                    <a href="my-recipes.html">My Recipes</a>
+                                    <a href="#" onclick="logout()">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Auth Buttons (shown when not logged in) -->
+                        <li class="auth-buttons" id="auth-buttons">
+                            <a href="login.html" class="btn">Log in</a>
+                            <a href="signup.html" class="btn btn-secondary">Sign up</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
