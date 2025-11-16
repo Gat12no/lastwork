@@ -549,3 +549,23 @@ footer {
         justify-content: center;
     }
 }
+/* Enhanced Image Styles */
+.recipe-img, .team-img {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Ensure all background images display properly */
+[style*="background-image"] {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Hero section image optimization */
+.hero {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
